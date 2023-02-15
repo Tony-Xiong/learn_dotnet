@@ -1,7 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using WebApiDemo.Domains;
+using WebApiDemo.Models;
+using WebApiDemo.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.Configure<BookStoreDatabaseSettings>(
+    builder.Configuration.GetSection("BookStoreDatabase"));
+builder.Services.AddSingleton<BooksService>();
 
 // Add services to the container.
 

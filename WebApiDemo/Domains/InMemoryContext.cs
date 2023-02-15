@@ -12,7 +12,7 @@ public class InMemoryContext : DbContext
 
     public DbSet<TodoItem> TodoItems { get; set; } = null!;
     
-    public DbSet<Book> Books { get; set; } = null!;
+    public DbSet<DmBook> Books { get; set; } = null!;
     
     public DbSet<WebApiDemo.Domains.Movie> Movie { get; set; }
 }

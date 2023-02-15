@@ -1,6 +1,6 @@
 ﻿namespace WebApiDemo.Domains;
 
-public class Book
+public class DmBook
 {
     public long Id { get; set; }
     public string Name { get; set; }
